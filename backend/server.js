@@ -15,12 +15,23 @@ connectCloudinary()
 app.use(express.json())
 app.use(cors())
 app.use(express.urlencoded({ extended: true })); // ✅ Parses URL-encoded data
+const __dirname=path.resolve();
 
 
 // api endpoint
 app.use('/api/admin',adminRouter)
 app.use('/api/doctor',doctorRouter)
 app.use('/api/user',userRouter)
+
+app.use(express.static(path.join(__dirname, "frontend/dist")));
+app.get('*', (_, res) => {
+  res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+});
+
+app.use(express.static(path.join(__dirname, "admin/dist")));
+app.get('*', (_, res) => {
+  res.sendFile(path.resolve(__dirname, "admin", "dist", "index.html"));
+});
 
 app.get('/',(req,res)=>{
     res.send('Api World')
