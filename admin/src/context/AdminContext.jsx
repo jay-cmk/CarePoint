@@ -4,7 +4,8 @@ import { toast } from "react-toastify"; // Ensure you import toast if using it
 
 export const AdminContext = createContext();
 
-const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://carepoint-u5lv.onrender.com";
+const backendUrl = import.meta.env.VITE_BACKEND_URL || "https://carepoin-backend-1.onrender.com";
+
 
 const AdminContextProvider = (props) => {
     const [Token, setAtoken] = useState(localStorage.getItem("token") || "");
