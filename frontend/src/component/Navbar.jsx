@@ -28,7 +28,7 @@ const Navbar = () => {
         <NavLink to="/doctors" className={linkClass}><li>All Doctors</li></NavLink>
         <NavLink to="/about" className={linkClass}><li>About</li></NavLink>
         <NavLink to="/contact" className={linkClass}><li>Contact</li></NavLink>
-        <a href=" https://effortless-fox-387141.netlify.app/" className="py-1 text-gray-700">Admin Panel</a> 
+        <a href="https://care-point-fhvg.vercel.app/" className="py-1 text-gray-700">Admin Panel</a> 
       </ul>
 
       <div className="flex items-center gap-4 relative">
@@ -76,7 +76,7 @@ const Navbar = () => {
           <NavLink to="/doctors" className={linkClass} onClick={() => setShowMenu(false)}>All Doctors</NavLink>
           <NavLink to="/about" className={linkClass} onClick={() => setShowMenu(false)}>About</NavLink>
           <NavLink to="/contact" className={linkClass} onClick={() => setShowMenu(false)}>Contact</NavLink>
-          <a href="http://localhost:3001" className="py-1 text-gray-700" onClick={() => setShowMenu(false)}>Admin Panel</a>
+          <a href="https://care-point-fhvg.vercel.app/" className="py-1 text-gray-700" onClick={() => setShowMenu(false)}>Admin Panel</a>
         </ul>
       </div>
 
