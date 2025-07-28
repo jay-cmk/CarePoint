@@ -4,8 +4,8 @@ import { toast } from "react-toastify"; // Ensure you import toast if using it
 
 export const AdminContext = createContext();
 
-// const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
-const backendUrl ="https://carepoin-backend-1.onrender.com" || "http://localhost:5000";
+// const backendUrl = import.meta.env.VITE_BACKEND_URL;
+const backendUrl ="https://carepoin-backend-1.onrender.com";
 
 
 const AdminContextProvider = (props) => {
